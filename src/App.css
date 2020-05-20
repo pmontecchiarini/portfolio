@@ -1,0 +1,14 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+span{
+  color: rgb(87, 86, 86);
+  text-transform: lowercase;
+  font-style: italic;
+ 
+}

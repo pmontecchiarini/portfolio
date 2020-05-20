@@ -1,0 +1,59 @@
+.Contact{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.Contact h2{
+    color:#fa8072;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Contact h2 span{
+    font-style: italic;
+}
+
+.Contact ul{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.Contact li{
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.Contact a{
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 30%;
+}
+
+.Contact a:hover,
+.Contact a:active
+{
+    color: #FFF;
+    background-color: #fa8072;;
+}
+
+.Contact img{
+ width: 100%;
+ height: auto;
+ max-width: 50px;
+}
+
+.Contact span{
+    font-style: normal;
+    text-transform: none;
+}
+
+@media (max-width:500px){
+
+    .Contact a{    
+        width: 90%;
+    }
+}

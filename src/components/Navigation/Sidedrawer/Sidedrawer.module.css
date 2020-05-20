@@ -1,0 +1,30 @@
+.Sidedrawer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 70%;
+    width: 280px;
+    height: 100%;
+    z-index: 100;
+    background-color: #EEE;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    transition: transform 0.3s ease-in-out ;
+}
+
+/*--------Media query for bigger devices (Sidedrawer should not be seen)--------*/
+
+@media (min-width: 500px){
+    .Sidedrawer{
+        display: none;
+    }
+}
+
+.Open{
+    transform: translateX(0);
+
+}
+
+.Closed{
+    transform: translateX(-100%);
+}

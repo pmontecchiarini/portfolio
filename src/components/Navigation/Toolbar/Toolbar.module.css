@@ -1,0 +1,16 @@
+.Toolbar{
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    z-index:90;
+    margin:0;
+    padding: 0;
+}
+
+/*-------Hide toolbar when sidedrawer is open---------*/
+
+@media (max-width: 499px){
+    .DesktopOnly{
+        display: none;
+    }
+}
