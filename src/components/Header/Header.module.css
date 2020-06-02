@@ -4,6 +4,7 @@
     padding: 20px 0;
     margin-bottom: 20px;
     border-bottom: 1px solid #CCC;
+    position: relative;
 }
 
 h1{
@@ -21,4 +22,15 @@ h2{
     h1{
         font-size: 1.5em;
     }
+}
+
+.Lang_Select{
+    position: absolute;
+    top:2px;
+    right:2px;
+}
+
+select{
+    color: #fa8072;
+    border-color: #fa8072;
 }
