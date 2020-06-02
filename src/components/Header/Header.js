@@ -3,6 +3,7 @@ import classes from './Header.module.css';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import Sidedrawer from '../Navigation/Sidedrawer/Sidedrawer';
+import LanguageSelector from '../LenguageSelector/LenguageSelector';
 
 const Header = () => {
 
@@ -25,7 +26,7 @@ const Header = () => {
                 <Toolbar toggleButton={sideDrawerToggleHandler}/>
                     <h1>PM Developer</h1>
                     <h2>Portfolio</h2>
-                    
+                    <LanguageSelector/>
             </div> 
         </Fragment>
     )

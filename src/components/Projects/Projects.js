@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Projects.module.css";
 import Thumbnail from "./Thumbnail/Thumbnail";
+import { Text } from '../../containers/Language';
 
 import FyloLanding from '../../assets/link-previews/fylo-landing.jpg';
 import Huddle from '../../assets/link-previews/huddle.jpg';
@@ -13,8 +14,8 @@ const Projects = () => {
   return (
     // Render a Thumbnail component
     <div className={classes.Projects}>
-      <h2>Projects <span>· Proyectos</span></h2>
-      <p>Some of the projects I've been working on. <span>· Algunos de los proyectos en los que estuve trabajando.</span></p>
+      <h2><Text tid="projects" /></h2>
+      <p><Text tid="projectsParagraph" /></p>
       <div className={classes.ProjectList}>
         <Thumbnail 
           link="https://pmontecchiarini.github.io/Project-1-HTML5-CSS3/" 
