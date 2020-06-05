@@ -1,12 +1,16 @@
 import React from "react";
-import classes from './Welcome.module.css';
-import { Text } from '../../containers/Language';
+import classes from "./Welcome.module.css";
+import { Text } from "../../containers/Language";
+
+import Design_team from "../../assets/img/undraw_design_team.svg";
 
 const Welcome = (props) => {
   return (
     <div className={classes.Welcome}>
-      <p><Text tid="homeText" /></p>
-      
+      <img src={Design_team} alt="" />
+      <p>
+        <Text tid="homeText" />
+      </p>
     </div>
   );
 };

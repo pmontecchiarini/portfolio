@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Aboutme.module.css";
-import { Text } from '../../containers/Language';
+import { Text } from "../../containers/Language";
 
 import CSSIcon from "../../assets/img/css3.svg";
 import GitIcon from "../../assets/img/git-icon.svg";
@@ -11,9 +11,13 @@ import ReduxIcon from "../../assets/img/redux.svg";
 
 const Aboutme = () => (
   <div className={classes.Aboutme}>
-    <h2><Text tid="aboutMe" /></h2>
-    <p><Text tid="aboutmeParagraph" /></p>
-    
+    <h2>
+      <Text tid="aboutMe" />
+    </h2>
+    <p>
+      <Text tid="aboutmeParagraph" />
+    </p>
+
     <h2>Skills</h2>
     <ul>
       <li>

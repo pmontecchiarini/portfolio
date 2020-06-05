@@ -16,34 +16,59 @@
 .Contact ul{
     text-align: center;
     margin: 20px auto;
+    
+    
 }
 
 .Contact li{
     list-style-type: none;
     margin: 20px 0;
+    display: flex;
 }
 
 .Contact a{
     color: #000;
     font-size: 1em;
     text-decoration: none;
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 30%;
+    text-align: left;
+    background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 2px
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+  
+  padding-left: 10px;
+  text-decoration: none;
+    margin: auto 0;
 }
 
 .Contact a:hover,
 .Contact a:active
 {
-    color: #FFF;
-    background-color: #fa8072;;
+    background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+   
 }
+
+:root {
+    --mainColor: #fa8072;
+  }
 
 .Contact img{
  width: 100%;
  height: auto;
  max-width: 50px;
+ min-height: 45px;
+ padding-right: 20px;
 }
 
 .Contact span{
