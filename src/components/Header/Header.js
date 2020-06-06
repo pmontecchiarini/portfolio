@@ -24,8 +24,8 @@ const Header = () => {
                 closed={sidedrawerClosedHandler}/>
             <div className={classes.Header}>
                 <Toolbar toggleButton={sideDrawerToggleHandler}/>
-                    <h1>PM Developer</h1>
-                    <h2>Portfolio</h2>
+                    <h1>Patricia Montecchiarini</h1>
+                    <h2>Web developer | Portfolio</h2>
                     <div className={classes.Lang_Select}><LanguageSelector/></div>
             </div> 
         </Fragment>

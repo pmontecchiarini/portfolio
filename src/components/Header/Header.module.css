@@ -9,7 +9,7 @@
 
 h1{
     font-size: 2em;
-    margin: 5px 0;
+    margin:10px 0px;
     text-transform: uppercase;
 }
 
@@ -24,13 +24,33 @@ h2{
     }
 }
 
+/*Styling the language select*/
+
 .Lang_Select{
     position: absolute;
     top:2px;
     right:2px;
+    
 }
 
-select{
-    color: #fa8072;
-    border-color: #fa8072;
+.Lang_Select select{
+    border: 0px;
+    background-color:#fa8072;
+    color: #FFF;
+    padding: 0.1rem 0.8rem;
+    outline: 0;
+    
 }
+
+.Lang_Select select:hover,
+.Lang_Select select:active{
+    border: 0px;
+    outline: 0;
+    
+}
+
+.Lang_Select select option{
+    background-color: #f58072;    
+}
+
+
