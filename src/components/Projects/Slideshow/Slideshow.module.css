@@ -1,0 +1,112 @@
+.slide-container {
+    width: 70%;
+    margin: auto;
+   }
+  
+  h3 {
+    text-align: center;
+   }
+
+  
+  .eachSlide > div {
+    
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .eachSlide h3 {
+    padding: 1rem;
+    font-size: 1em;
+    background: #efefef;
+    text-align: center;
+    color:#000
+  }
+
+  .Layout{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+  
+  }
+
+  @media (max-width: 480px) { 
+    .Layout{
+      display: block;
+
+    }
+    
+  }
+
+  .Layout a{
+    color: #fa8072;
+    font-weight: bold;
+    margin:0rem 1rem;
+  }
+
+  .Layout a:hover{
+    color: #fa8072;
+    text-decoration: underline;
+  }
+
+  .Layout a:visited{
+    color: #fa8072;
+  }
+
+
+  p.Slideparagraph{
+    text-align: left;
+    color: rgb(87, 86, 86);
+    margin-bottom:1rem
+  }
+
+.ProjectImage{
+  width: 50%;
+  height: 300px;
+  margin-left: 1rem;
+}
+@media (max-width: 480px) { 
+  .ProjectImage{
+    width: 70%;
+    height: 100vw;
+    margin:1rem auto;
+  }
+  
+}
+
+.ProjectDetails{
+  width: 35%;
+}
+
+@media (max-width: 480px) { 
+  .ProjectDetails{
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+
+  /*
+  .each-fade {
+    display: flex;
+  }
+  
+  .each-fade .image-container {
+    width: 75%;
+    overflow: hidden;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+  }
+  
+  .each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+*/
