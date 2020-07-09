@@ -5,7 +5,7 @@ import classes from "./Slideshow.module.css";
 
 import Huddle from "./images/huddle.jpg";
 import Fylo from "./images/fylo-landing.jpg";
-import ToDo from "./images/todo-list.jpg";
+import VeggiesResto from "./images/veggiesresto.jpg";
 
 const properties = {
   duration: 5000,
@@ -18,6 +18,39 @@ const properties = {
 const Slideshow = (props) => {
   return (
     <Slide {...properties}>
+      <div className={classes.eachSlide}>
+        <h3>Veggie's Resto</h3>
+        <div className={classes.Layout}>
+          <div className={classes.ProjectDetails}>
+            <p className={classes.Slideparagraph}>
+              Concept for a restaurant's website. With a database to upload menus and store customers reviews and messages.  
+            </p>
+            <a
+              href="https://concept-veggie-resto.herokuapp.com/"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live demo
+            </a>
+            <a
+              href="https://github.com/pmontecchiarini/Veggies-Resto-CONCEPT"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github repositorie
+            </a>
+          </div>
+
+          <div
+            className={classes.ProjectImage}
+            style={{ backgroundImage: `url(${VeggiesResto})`, backgroundSize: "cover" }}
+          ></div>
+        </div>
+      </div>
+
+
       <div className={classes.eachSlide}>
         <h3>Frontend Mentor challenge #1</h3>
         <div className={classes.Layout}>
@@ -81,37 +114,7 @@ const Slideshow = (props) => {
           ></div>
         </div>
       </div>
-      <div className={classes.eachSlide}>
-        <h3>To Do List</h3>
-        <div className={classes.Layout}>
-          <div className={classes.ProjectDetails}>
-            <p className={classes.Slideparagraph}>
-              Built this app with vanilla Javascript. Used Local storage to keep track of the items that were added to the list by the user.
-            </p>
-            <a
-              href="https://pmontecchiarini.github.io/To-Do-List/"
-              style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live demo
-            </a>
-            <a
-              href="https://github.com/pmontecchiarini/To-Do-List"
-              style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github repositorie
-            </a>
-          </div>
-
-          <div
-            className={classes.ProjectImage}
-            style={{ backgroundImage: `url(${ToDo})`, backgroundSize: "cover" }}
-          ></div>
-        </div>
-      </div>
+      
     </Slide>
   );
 };
