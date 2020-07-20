@@ -39,7 +39,7 @@ const Slideshow = (props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github repositorie
+              Github repository
             </a>
           </div>
 
@@ -72,7 +72,7 @@ const Slideshow = (props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github repositorie
+              Github repository
             </a>
           </div>
 
@@ -104,7 +104,7 @@ const Slideshow = (props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github repositorie
+              Github repository
             </a>
           </div>
 
