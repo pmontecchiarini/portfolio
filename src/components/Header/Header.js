@@ -1,11 +1,11 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import classes from './Header.module.css';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import Sidedrawer from '../Navigation/Sidedrawer/Sidedrawer';
 import LanguageSelector from '../LenguageSelector/LenguageSelector';
 
-const Header = () => {
+const Header = (props) => {
 
     const [sideDrawerVisible, setSideDrawerVisible] = useState(false);
   
@@ -18,17 +18,13 @@ const Header = () => {
   }
 
     return(
-        <Fragment>
-            <Sidedrawer 
-                open={sideDrawerVisible}
-                closed={sidedrawerClosedHandler}/>
-            <div className={classes.Header}>
-                <Toolbar toggleButton={sideDrawerToggleHandler}/>
-                    <h1>Patricia Montecchiarini</h1>
-                    <h2>Web developer | Portfolio</h2>
-                    <div className={classes.Lang_Select}><LanguageSelector/></div>
-            </div> 
-        </Fragment>
+        <header className={classes.Header}>
+          <div className={classes.Lang_Select}><LanguageSelector/></div>
+          <Sidedrawer 
+              open={sideDrawerVisible}
+              closed={sidedrawerClosedHandler}/>
+          <Toolbar toggleButton={sideDrawerToggleHandler}/>        
+        </header>
     )
 };
 

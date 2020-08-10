@@ -2,44 +2,35 @@ import React from "react";
 import classes from "./Aboutme.module.css";
 import { Text } from "../../containers/Language";
 
-import CSSIcon from "../../assets/img/css3.svg";
-import GitIcon from "../../assets/img/git-icon.svg";
-import HTMLIcon from "../../assets/img/html5.svg";
-import JSIcon from "../../assets/img/javascript.svg";
-import ReactIcon from "../../assets/img/react.svg";
-import ReduxIcon from "../../assets/img/redux.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
-const Aboutme = () => (
-  <div className={classes.Aboutme}>
-    <h2>
-      <Text tid="aboutMe" />
-    </h2>
-    <p>
-      <Text tid="aboutmeParagraph" />
-    </p>
+const Aboutme = (props) => {
 
-    <h2>Skills</h2>
-    <ul>
-      <li>
-        <img src={HTMLIcon} alt="HTML5" style={{ height: "70%" }} />
-      </li>
-      <li>
-        <img src={CSSIcon} alt="CSS3" />
-      </li>
-      <li>
-        <img src={JSIcon} alt="JavaScript" />
-      </li>
-      <li>
-        <img src={GitIcon} alt="Git" />
-      </li>
-      <li>
-        <img src={ReactIcon} alt="ReactJS" />
-      </li>
-      <li>
-        <img src={ReduxIcon} alt="Redux" />
-      </li>
-    </ul>
+  return (
+  <div className={classes.Aboutme} id="aboutme">
+    <div className={classes.Item0}>
+      <FontAwesomeIcon icon={faCoffee} className={classes.icons} />
+      <h2>
+        <Text tid="aboutMe" />
+      </h2>
+      <p>
+        <Text tid="aboutmeParagraph" />
+      </p>
+    </div>
+    <div className={classes.Item1}>
+      <FontAwesomeIcon
+        icon={faLaptopCode}
+        className={classes.icons}
+      />
+      <h2>Skills</h2>
+        <h3><Text tid="primaryExperience" /></h3>
+        <p><Text tid="skillList" /></p>
+        <h3><Text tid="secondaryExperience" /></h3>
+        <p><Text tid="skillList2" /></p>
+      
+    </div>
   </div>
-);
+)};
 
 export default Aboutme;

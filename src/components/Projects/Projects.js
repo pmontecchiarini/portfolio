@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     // Render a Thumbnail component
-    <div className={classes.Projects}>
+    <div className={classes.Projects} id="projects">
       <h2><Text tid="projects" /></h2>
       <p><Text tid="projectsParagraph" /></p>
        <Slideshow/>

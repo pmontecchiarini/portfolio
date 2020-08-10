@@ -1,17 +1,60 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom'; 
+import React from 'react'; 
 import { Text } from '../../../containers/Language';
+import { Link } from "react-scroll";
 
 import classes from './NavItems.module.css';
 
-const NavItems = () =>(
+const NavItems = (props) =>{
 
-    <ul className={classes.NavItems}>
-        <li><NavLink to="/" ><Text tid="home" /></NavLink></li>
-        <li><NavLink to="/projects" ><Text tid="projects" /></NavLink></li>
-        <li><NavLink to="/aboutme"><Text tid="aboutMe" /></NavLink></li>
-        <li><NavLink to="/contact"><Text tid="contact" /></NavLink></li>
-    </ul>
-);
+return (
+
+    <div className={classes.NavItems}>
+        
+            <Link
+                activeClass="active"
+                to="aboutme"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >
+                    <Text tid="aboutMe" />
+            </Link>
+        
+            <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >
+                    <Text tid="projects" />
+            </Link>
+        
+            <Link
+                activeClass="active"
+                to="articles"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >
+                    <Text tid="articles" />
+            </Link>
+       
+            <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >
+                    <Text tid="contact" />
+            </Link>
+       
+    </div>
+)};
 
 export default NavItems;

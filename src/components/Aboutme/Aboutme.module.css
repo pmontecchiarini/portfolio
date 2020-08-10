@@ -1,37 +1,72 @@
 .Aboutme{
     width: 90%;
-    margin: 10px auto;
-    padding: 10px;
-}
-
-.Aboutme h2{
-    color:#fa8072;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
-}
-
-.Aboutme p{
-   text-align: justify;
-   margin: 15px 0;
-}
-
-.Aboutme ul{
-    margin: 20px auto;
+    margin: 6rem auto 0rem auto;
+    padding:2rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
- }
-
-.Aboutme li{
-   list-style-type: none;
+    border:1px solid #EEE ;
+    box-shadow: 3px 2px 2px #CCC;
+    border-radius: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: space-between;
+    justify-content: center;
 }
 
-.Aboutme img{
-    width: 100%;
-    height: auto;
-    max-width: 70px;
+.Item0, .Item1{
+    width: 45%;
+    box-sizing: border-box;
+    padding: 0px 2rem;
 }
 
-.Aboutme span{
-    text-transform: none;
+.Item0{
+    border-right: 1px solid #CCC;
+    padding-right: 2rem;
+}
+
+.Item1{
+    padding-left: 2rem;
+}
+
+.Item0 p, .Item1 p{
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.Item1 h3{
+    color: #fa8072;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icons{
+    color: #fa8072;
+    font-size: 3rem;
+}
+
+
+/* -----------MOBILE STYLES------------*/
+
+@media (max-width: 500px){
+    .Aboutme{
+        display: block;
+    }
+    
+    .Item0, .Item1{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    
+    .Item0{
+        border-right: 0px ;
+        padding-right: 0rem;
+    }
+    
+    .Item1{
+        padding-left: 0rem;
+    }
+    
+   
 }

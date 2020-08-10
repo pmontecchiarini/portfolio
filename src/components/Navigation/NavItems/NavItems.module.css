@@ -1,27 +1,21 @@
 .NavItems{
-    margin: 0 0 30px 0;
+    margin: 0px;
     padding:0;
     display: block;
     justify-content: left;
 }
 
-.NavItems li{
-    font-weight: bold;
-    list-style-type: none;
-    padding: 0px 10px;
-    margin: 15px 0px;
-}
-
-
 :root {
     --mainColor: #fa8072;
+
   }
 
 .NavItems a{
     text-decoration: none;
-    color: #000;
+    color: #121212;
+    font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
     background:
      linear-gradient(
        to right,
@@ -31,9 +25,11 @@
      );
     background-repeat: repeat-x;
     background-size: 100%;
-  color: #000;
-  padding-left: 10px;
+  display: block;
+  margin: 1rem 0.5rem;
+  padding-left: 0.4rem;
   text-decoration: none;
+  
 }
 
 .NavItems a:hover,
@@ -56,15 +52,8 @@
       justify-content: center;
   }
   
-  .NavItems li{
-      margin:0px;
-  }
   
   .NavItems a{
-      text-decoration: none;
-      color: #000;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
       background:
        linear-gradient(
          to bottom, var(--mainColor) 0%,
@@ -73,9 +62,9 @@
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 4px 4px;
-      color: #000;
       transition: background-size .2s;
-      padding-left: 0px;
+      margin: 0px 1rem;
+      padding-left: 0rem;
   }
   
   .NavItems a:hover,

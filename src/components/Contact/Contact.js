@@ -7,7 +7,7 @@ import GithubIcon from "../../assets/img/github-1.svg";
 import GmailIcon from "../../assets/img/gmail-icon.svg";
 
 const Contact = () => (
-  <div className={classes.Contact}>
+  <div className={classes.Contact} id="contact">
     <h2>
       <Text tid="contact"/>
     </h2>
@@ -38,7 +38,7 @@ const Contact = () => (
       </li>
       <li>
         <span>
-          <img src={GmailIcon} alt="pmontecchiarini.dev@gmail.com" />
+          <img src={GmailIcon} alt="pmontecchiarini.dev@gmail.com"/>
         </span>
         <a href="mailto:pmontecchiarini.dev@gmail.com">
           <Text tid="contactEmail" />

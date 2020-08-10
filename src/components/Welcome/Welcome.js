@@ -1,25 +1,32 @@
 import React from "react";
-import Button from "../UI/Button/Button";
 import classes from "./Welcome.module.css";
 
 import { Text } from "../../containers/Language";
-import Design_team from "../../assets/img/undraw_design_team.svg";
+import { Link } from 'react-scroll';
 
 
 const Welcome = (props) => {
-
- 
-
-  return (
+      
+   return (
     <div className={classes.Welcome}>
-      <img src={Design_team} alt="" />
       <div className={classes.Welcome_text}>
+        <h1>
+          <Text tid="homeTitle" />
+        </h1>
         <p>
           <Text tid="homeText" />
         </p>
-        <Button >
-           <Text tid="button" />
-        </Button>
+        <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className={classes.buttonProjects}
+                >
+                    <Text tid="button" />
+            </Link>
         
       </div>
     </div>

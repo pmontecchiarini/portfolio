@@ -10,7 +10,7 @@ const Toolbar =(props) =>{
         <div className={classes.Toolbar}>
         <DrawerToggle clicked={props.toggleButton}/>
         <div className={classes.DesktopOnly}>
-            <NavItems/>
+            <NavItems />
         </div>
         
     </div>

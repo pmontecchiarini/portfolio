@@ -1,10 +1,10 @@
 .Toolbar{
-    width: 100%;
-    align-items: center;
     box-sizing: border-box;
     z-index:90;
     margin:0;
     padding: 0;
+    align-self: flex-end;
+    
 }
 
 /*-------Hide toolbar when sidedrawer is open---------*/
@@ -14,3 +14,4 @@
         display: none;
     }
 }
+

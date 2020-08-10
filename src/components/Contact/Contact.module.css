@@ -1,12 +1,7 @@
 .Contact{
     width: 90%;
-    margin: 10px auto;
+    margin: 4rem auto;
     padding: 10px;
-}
-
-.Contact h2{
-    color:#fa8072;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .Contact h2 span{
@@ -81,4 +76,5 @@
     .Contact a{    
         width: 90%;
     }
+
 }

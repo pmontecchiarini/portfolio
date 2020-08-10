@@ -1,0 +1,11 @@
+.Articles{
+    margin: 4rem auto 0rem auto;
+    background-color: #EEE;
+}
+
+.Container{
+    width: 90%;
+    margin: 6rem auto 0rem auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}

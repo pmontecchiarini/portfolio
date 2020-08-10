@@ -1,16 +1,11 @@
 .Projects{
     width: 90%;
-    margin: 10px auto;
+    margin: 4rem auto 0rem auto;
     padding: 10px;
 }
 
 .ProjectList{
     margin: 30px 0;
-}
-
-.Projects h2{
-    color:#fa8072;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .Projects h2 span, .Projects p span{

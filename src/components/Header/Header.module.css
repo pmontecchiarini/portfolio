@@ -1,56 +1,28 @@
 .Header{
-    background-color: #EEE;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #CCC;
-    position: relative;
-}
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+} 
 
-h1{
-    font-size: 2em;
-    margin:10px 0px;
-    text-transform: uppercase;
-}
-
-h2{
-    font-size: 1.5em;
-    margin: 5px 0;
-}
-
-@media (max-width: 500px){
-    h1{
-        font-size: 1.5em;
-    }
-}
 
 /*Styling the language select*/
 
-.Lang_Select{
-    position: absolute;
-    top:2px;
-    right:2px;
-    
-}
-
 .Lang_Select select{
-    border: 0px;
-    background-color:#fa8072;
-    color: #FFF;
-    padding: 0.1rem 0.8rem;
-    outline: 0;
-    
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    border: 1px solid #121212;
+    background-color:#fff;
+    color: #121212;
+    padding: 0.1rem 0.2rem;
+    outline: none;
 }
 
-.Lang_Select select:hover,
-.Lang_Select select:active{
-    border: 0px;
-    outline: 0;
-    
-}
 
-.Lang_Select select option{
-    background-color: #f58072;    
-}
+
+
+
 
 

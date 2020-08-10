@@ -30,6 +30,7 @@ const Slideshow = (props) => {
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
+              className={classes.Button}
             >
               Live demo
             </a>

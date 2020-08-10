@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route } from "react-router-dom";
+
 // Import Context
 import { LanguageProvider } from './containers/Language';
 
@@ -11,20 +11,21 @@ import Aboutme from "./components/Aboutme/Aboutme";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Welcome from "./components/Welcome/Welcome";
+import Articles from "./components/Articles/Articles";
 
 function App() {
+
   return (
     <LanguageProvider>
-      <BrowserRouter>
         <div className="App">
           <Header />
-          <Route exact path="/" component={Welcome} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/aboutme" component={Aboutme} />
-          <Route path="/contact" component={Contact} />
+          <Welcome/>
+          <Aboutme/>
+          <Projects/>
+          <Articles/>
+          <Contact/>
           <Footer />
         </div>
-      </BrowserRouter>
     </LanguageProvider>
   );
 }
