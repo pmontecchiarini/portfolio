@@ -3,7 +3,7 @@ import { Slide } from "react-slideshow-image";
 
 import classes from "./Slideshow.module.css";
 
-import Huddle from "./images/huddle.jpg";
+import ElPasaje from "./images/elpasaje.jpg";
 import Fylo from "./images/fylo-landing.jpg";
 import VeggiesResto from "./images/veggiesresto.jpg";
 
@@ -53,33 +53,26 @@ const Slideshow = (props) => {
 
 
       <div className={classes.eachSlide}>
-        <h3>Frontend Mentor challenge #1</h3>
+        <h3>El Pasaje Negocios Inmobiliarios</h3>
         <div className={classes.Layout}>
           <div className={classes.ProjectDetails}>
             <p className={classes.Slideparagraph}>
-              Huddle landing page with a single introductory section.
+              WordPress webpage for a real state business. 
             </p>
             <a
-              href="https://pmontecchiarini.github.io/FrontendMentor-Challenge-Huddle/"
+              href="http://elpasajeinmobiliaria.com.ar/"
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
             >
               Live demo
             </a>
-            <a
-              href="https://github.com/pmontecchiarini/FrontendMentor-Challenge-Huddle"
-              style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github repository
-            </a>
+            
           </div>
 
           <div
             className={classes.ProjectImage}
-            style={{ backgroundImage: `url(${Huddle})`, backgroundSize: "cover" }}
+            style={{ backgroundImage: `url(${ElPasaje})`, backgroundSize: "cover" }}
           ></div>
         </div>
       </div>
